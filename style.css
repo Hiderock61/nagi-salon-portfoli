@@ -1,2 +1,113 @@
-:root{--ink:#2f2a27;--cream:#f7f2eb;--paper:#fffdf9;--sage:#7c8977;--sage-dark:#586452;--rose:#c99f91;--line:#ded6cc;--muted:#746d67}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.8}a{color:inherit}.site-header{height:76px;padding:0 5vw;display:flex;align-items:center;gap:36px;border-bottom:1px solid rgba(47,42,39,.1);background:rgba(255,253,249,.94);position:relative;z-index:10}.logo{text-decoration:none;line-height:1}.logo strong{display:block;font:italic 30px Georgia,serif}.logo span,footer span{font-size:8px;letter-spacing:.22em}.site-header nav{display:flex;gap:28px;margin-left:auto}.site-header nav a{text-decoration:none;font-size:12px}.header-cta,.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;border:0;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.03em;cursor:pointer}.header-cta{background:var(--sage-dark);color:#fff}.hero{min-height:650px;display:grid;grid-template-columns:56% 44%;background:var(--cream)}.hero-copy{padding:105px 8vw 72px}.eyebrow,.section-label{margin:0 0 20px;color:var(--sage-dark);font-size:10px;font-weight:700;letter-spacing:.24em}.hero h1{margin:0;font:400 clamp(40px,5vw,68px)/1.42 Georgia,"Yu Mincho",serif;letter-spacing:.04em}.hero h1 em{color:var(--sage-dark);font-style:normal}.hero-lead{max-width:610px;margin:28px 0;color:var(--muted)}.hero-actions{display:flex;align-items:center;gap:24px}.primary{background:var(--sage-dark);color:#fff}.primary:hover{background:#414b3d}.primary:focus-visible,.header-cta:focus-visible{outline:3px solid var(--rose);outline-offset:3px}.text-link{font-size:13px;text-underline-offset:5px}.quick-info{display:flex;gap:0;margin:50px 0 0;border-top:1px solid var(--line)}.quick-info div{padding:18px 28px 0 0;margin-right:28px;border-right:1px solid var(--line)}.quick-info div:last-child{border:0}.quick-info dt{font-size:10px;color:var(--muted)}.quick-info dd{margin:2px 0;font-size:13px;font-weight:700}.hero-art{position:relative;overflow:hidden;background:linear-gradient(150deg,#d8c7b9,#a9b3a3)}.hero-art:after{content:"";position:absolute;inset:12%;border:1px solid rgba(255,255,255,.55);border-radius:48% 48% 8px 8px}.sun{position:absolute;width:280px;height:280px;border-radius:50%;background:#eadfd1;top:15%;left:12%;box-shadow:0 0 70px rgba(255,248,232,.65)}.leaf{position:absolute;z-index:2;width:95px;height:380px;border-radius:100% 0 100% 0;background:#697865;transform:rotate(25deg);opacity:.85}.leaf-a{right:18%;bottom:-90px}.leaf-b{right:42%;bottom:-180px;transform:rotate(-18deg);background:#879282}.section{padding:100px 8vw}.intro{display:grid;grid-template-columns:1fr 1fr;gap:8vw;background:var(--paper)}h2{margin:0;font:400 clamp(31px,4vw,48px)/1.5 Georgia,"Yu Mincho",serif}.intro .lead{font-size:20px;font-family:Georgia,"Yu Mincho",serif}.intro p:last-child{color:var(--muted)}.section-head{max-width:700px;margin-bottom:46px}.section-head>p:last-child{color:var(--muted)}.menu-section{background:#ece6de}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.menu-grid article{position:relative;background:var(--paper);padding:38px 32px;border:1px solid transparent}.menu-grid article.featured{border-color:var(--sage)}.number{color:var(--rose);font:italic 22px Georgia,serif}.menu-grid h3{font:400 22px Georgia,"Yu Mincho",serif}.menu-grid article>p:not(.number,.badge){font-size:13px;color:var(--muted)}.badge{position:absolute;right:18px;top:16px;background:var(--sage);color:#fff;padding:3px 9px;font-size:10px}.price{display:flex;justify-content:space-between;align-items:baseline;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}.price strong{font-size:12px}.price span{font:20px Georgia,serif}.note{font-size:11px;color:var(--muted)}.reasons{background:var(--sage-dark);color:#fff}.reasons .section-label{color:#d9c2b8}.reasons ol{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.25)}.reasons li{display:grid;grid-template-columns:70px 1fr;gap:28px;padding:26px 0;border-bottom:1px solid rgba(255,255,255,.25)}.reasons li>span{font:italic 20px Georgia,serif;color:#d9c2b8}.reasons h3{margin:0;font:20px Georgia,"Yu Mincho",serif}.reasons p{margin:6px 0 0;color:#d8ddd6;font-size:13px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.steps article{padding:30px;border-top:3px solid var(--rose);background:var(--cream)}.steps span{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--sage-dark);color:#fff;font:italic 16px Georgia,serif}.steps h3{font:20px Georgia,"Yu Mincho",serif}.steps p{font-size:13px;color:var(--muted)}.access{display:grid;grid-template-columns:1fr 1fr;gap:8vw;background:#343b32;color:#fff}.access .section-label{color:#d8c2b8}.access p{color:#d7ddd4}.access dl{margin:0;border-top:1px solid #697165}.access dl div{display:grid;grid-template-columns:120px 1fr;padding:16px 0;border-bottom:1px solid #697165}.access dt{font-size:11px;color:#c8d0c4}.access dd{margin:0;font-size:14px}.contact{text-align:center;padding:100px 20px;background:#f2e7e1}.contact h2{margin-bottom:18px}.contact .button{margin-top:18px}.demo-note{max-width:520px;margin:18px auto 0;padding:12px;background:#fff;font-size:12px}.contact button{font-family:inherit}footer{padding:42px 8vw;background:#272925;color:#fff;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:end}footer strong{display:block;font:italic 28px Georgia,serif}footer nav{display:flex;gap:24px}footer nav a{font-size:12px;color:#e6ded8}footer small{grid-column:1/-1;color:#aaa}
-@media(max-width:760px){.site-header{height:auto;min-height:70px;padding:14px 18px;gap:14px;flex-wrap:wrap}.logo strong{font-size:25px}.site-header nav{order:3;width:100%;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:10px}.site-header nav a{font-size:11px}.header-cta{margin-left:auto;min-height:44px;padding:10px 13px;font-size:11px}.hero{display:block;min-height:0}.hero-copy{padding:70px 22px 55px}.hero h1{font-size:39px}.hero-lead{font-size:14px}.hero-actions{display:block}.hero-actions .button{width:100%;min-height:52px}.text-link{display:block;text-align:center;margin-top:16px}.quick-info{display:grid;grid-template-columns:1fr 1fr;margin-top:35px}.quick-info div{padding:13px 10px 0 0;margin:0 10px 0 0}.quick-info div:last-child{grid-column:1/-1;margin-top:12px}.hero-art{height:280px}.sun{width:190px;height:190px}.leaf{height:270px}.section{padding:72px 22px}.intro,.access{display:block}.intro>div+div{margin-top:35px}.intro .lead{font-size:18px}.section-head{margin-bottom:32px}.menu-grid,.steps{display:block}.menu-grid article,.steps article{margin-bottom:14px}.reasons li{grid-template-columns:42px 1fr;gap:12px}.access dl{margin-top:38px}.access dl div{grid-template-columns:95px 1fr}.contact{padding:72px 22px}.contact .button{width:100%;max-width:360px;min-height:52px}footer{display:block;padding:38px 22px}footer nav{display:grid;gap:10px;margin:24px 0}footer small{display:block}}
+:root{--ink:#211b17;--cream:#f7f2eb;--paper:#fffdf9;--sage:#7c8977;--sage-dark:#586452;--rose:#c99f91;--line:#ded6cc;--muted:#746d67;--black:#17120f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--paper);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.8}
+a{color:inherit}
+.site-header{height:76px;padding:0 5vw;display:flex;align-items:center;gap:36px;border-bottom:1px solid rgba(47,42,39,.1);background:rgba(255,253,249,.94);position:relative;z-index:10}
+.logo{text-decoration:none;line-height:1}
+.logo strong{display:block;font:italic 30px Georgia,serif}
+.logo span,footer span{font-size:8px;letter-spacing:.22em}
+.site-header nav{display:flex;gap:28px;margin-left:auto}
+.site-header nav a{text-decoration:none;font-size:12px}
+.header-cta,.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;border:0;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.03em;cursor:pointer}
+.header-cta{background:var(--black);color:#fff}
+.hero{min-height:650px;display:grid;grid-template-columns:56% 44%;background:var(--cream)}
+.hero-copy{padding:105px 8vw 72px}
+.eyebrow,.section-label{margin:0 0 20px;color:var(--sage-dark);font-size:10px;font-weight:700;letter-spacing:.24em}
+.hero h1{margin:0;font:400 clamp(40px,5vw,68px)/1.42 Georgia,"Yu Mincho",serif;letter-spacing:.04em}
+.hero h1 em{color:var(--sage-dark);font-style:normal}
+.hero-lead{max-width:610px;margin:28px 0;color:var(--muted)}
+.hero-actions{display:flex;align-items:center;gap:24px}
+.primary{background:var(--black);color:#fff}
+.primary:hover{background:#000}
+.primary:focus-visible,.header-cta:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.text-link{font-size:13px;text-underline-offset:5px}
+.quick-info{display:flex;gap:0;margin:50px 0 0;border-top:1px solid var(--line)}
+.quick-info div{padding:18px 28px 0 0;margin-right:28px;border-right:1px solid var(--line)}
+.quick-info div:last-child{border:0}
+.quick-info dt{font-size:10px;color:var(--muted)}
+.quick-info dd{margin:2px 0;font-size:13px;font-weight:700}
+.hero-art{position:relative;overflow:hidden;background:#2a160d url("assets/hero-salon-v2.jpg") center/cover no-repeat}
+.section{padding:100px 8vw}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:8vw;background:var(--paper)}
+h2{margin:0;font:400 clamp(31px,4vw,48px)/1.5 Georgia,"Yu Mincho",serif}
+.intro .lead{font-size:20px;font-family:Georgia,"Yu Mincho",serif}
+.intro p:last-child{color:var(--muted)}
+.section-head{max-width:700px;margin-bottom:46px}
+.section-head>p:last-child{color:var(--muted)}
+.menu-section{background:#ece6de}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.menu-grid article{position:relative;background:var(--paper);padding:38px 32px;border:1px solid transparent}
+.menu-grid article.featured{border-color:var(--sage)}
+.number{color:var(--rose);font:italic 22px Georgia,serif}
+.menu-grid h3{font:400 22px Georgia,"Yu Mincho",serif}
+.menu-grid article>p:not(.number,.badge){font-size:13px;color:var(--muted)}
+.badge{position:absolute;right:18px;top:16px;background:var(--sage);color:#fff;padding:3px 9px;font-size:10px}
+.price{display:flex;justify-content:space-between;align-items:baseline;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
+.price strong{font-size:12px}
+.price span{font:20px Georgia,serif}
+.note{font-size:11px;color:var(--muted)}
+.reasons{background:var(--sage-dark);color:#fff}
+.reasons .section-label{color:#d9c2b8}
+.reasons ol{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.25)}
+.reasons li{display:grid;grid-template-columns:70px 1fr;gap:28px;padding:26px 0;border-bottom:1px solid rgba(255,255,255,.25)}
+.reasons li>span{font:italic 20px Georgia,serif;color:#d9c2b8}
+.reasons h3{margin:0;font:20px Georgia,"Yu Mincho",serif}
+.reasons p{margin:6px 0 0;color:#d8ddd6;font-size:13px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.steps article{padding:30px;border-top:3px solid var(--rose);background:var(--cream)}
+.steps span{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--sage-dark);color:#fff;font:italic 16px Georgia,serif}
+.steps h3{font:20px Georgia,"Yu Mincho",serif}
+.steps p{font-size:13px;color:var(--muted)}
+.access{display:grid;grid-template-columns:1fr 1fr;gap:8vw;background:#343b32;color:#fff}
+.access .section-label{color:#d8c2b8}
+.access p{color:#d7ddd4}
+.access dl{margin:0;border-top:1px solid #697165}
+.access dl div{display:grid;grid-template-columns:120px 1fr;padding:16px 0;border-bottom:1px solid #697165}
+.access dt{font-size:11px;color:#c8d0c4}
+.access dd{margin:0;font-size:14px}
+.contact{text-align:center;padding:100px 20px;background:#f2e7e1}
+.contact h2{margin-bottom:18px}
+.contact .button{margin-top:18px}
+.demo-note{max-width:520px;margin:18px auto 0;padding:12px;background:#fff;font-size:12px}
+.contact button{font-family:inherit}
+footer{padding:42px 8vw;background:#272925;color:#fff;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:end}
+footer strong{display:block;font:italic 28px Georgia,serif}
+footer nav{display:flex;gap:24px}
+footer nav a{font-size:12px;color:#e6ded8}
+footer small{grid-column:1/-1;color:#aaa}
+
+@media(max-width:760px){.site-header{height:auto;min-height:70px;padding:14px 18px;gap:14px;flex-wrap:wrap}
+.logo strong{font-size:25px}
+.site-header nav{order:3;width:100%;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:10px}
+.site-header nav a{font-size:11px}
+.header-cta{margin-left:auto;min-height:44px;padding:10px 13px;font-size:11px}
+.hero{display:block;min-height:0}
+.hero-copy{padding:70px 22px 55px}
+.hero h1{font-size:39px}
+.hero-lead{font-size:14px}
+.hero-actions{display:block}
+.hero-actions .button{width:auto;min-width:132px;min-height:48px;padding:11px 20px}
+.text-link{display:block;text-align:center;margin-top:16px}
+.quick-info{display:grid;grid-template-columns:1fr 1fr;margin-top:35px}
+.quick-info div{padding:13px 10px 0 0;margin:0 10px 0 0}
+.quick-info div:last-child{grid-column:1/-1;margin-top:12px}
+.hero-art{height:280px}
+.sun{width:190px;height:190px}
+.leaf{height:270px}
+.section{padding:72px 22px}
+.intro,.access{display:block}
+.intro>div+div{margin-top:35px}
+.intro .lead{font-size:18px}
+.section-head{margin-bottom:32px}
+.menu-grid,.steps{display:block}
+.menu-grid article,.steps article{margin-bottom:14px}
+.reasons li{grid-template-columns:42px 1fr;gap:12px}
+.access dl{margin-top:38px}
+.access dl div{grid-template-columns:95px 1fr}
+.contact{padding:72px 22px}
+.contact .button{width:100%;max-width:360px;min-height:52px}
+footer{display:block;padding:38px 22px}
+footer nav{display:grid;gap:10px;margin:24px 0}
+footer small{display:block}
+}
