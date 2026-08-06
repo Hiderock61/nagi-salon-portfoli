@@ -6,7 +6,8 @@
 
 - 修正後版：`index.html`
 - 修正前版：`before/index.html`
-- 改善ケーススタディ：`case-study.html`
+- テキスト型の修正記録：`CASE_STUDY.md`
+- 初回ケーススタディ画面：`case-study.html`（旧版として保持）
 
 ## 想定案件
 
