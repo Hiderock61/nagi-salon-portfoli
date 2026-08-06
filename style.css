@@ -9,25 +9,26 @@ a{color:inherit}
 .logo span,footer span{font-size:8px;letter-spacing:.22em}
 .site-header nav{display:flex;gap:28px;margin-left:auto}
 .site-header nav a{text-decoration:none;font-size:12px}
-.header-cta,.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;border:0;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.03em;cursor:pointer}
+.header-cta,.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;border:0;border-radius:4px;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.03em;cursor:pointer}
 .header-cta{background:var(--black);color:#fff}
-.hero{min-height:650px;display:grid;grid-template-columns:56% 44%;background:var(--cream)}
-.hero-copy{padding:105px 8vw 72px}
+.hero{min-height:650px;position:relative;isolation:isolate;display:flex;align-items:center;color:#fff;background:#2a160d url("assets/hero-salon-v2.jpg") 66% center/cover no-repeat;overflow:hidden}
+.hero:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(18,10,6,.86) 0%,rgba(18,10,6,.7) 43%,rgba(18,10,6,.28) 72%,rgba(18,10,6,.18) 100%)}
+.hero-copy{width:min(720px,68%);padding:105px 8vw 92px}
 .eyebrow,.section-label{margin:0 0 20px;color:var(--sage-dark);font-size:10px;font-weight:700;letter-spacing:.24em}
+.hero .eyebrow{color:#e4cfc0}
 .hero h1{margin:0;font:400 clamp(40px,5vw,68px)/1.42 Georgia,"Yu Mincho",serif;letter-spacing:.04em}
-.hero h1 em{color:var(--sage-dark);font-style:normal}
-.hero-lead{max-width:610px;margin:28px 0;color:var(--muted)}
+.hero h1 em{color:#f3dfd0;font-style:normal}
+.hero-lead{max-width:590px;margin:28px 0;color:#f2ece7;text-shadow:0 1px 14px rgba(0,0,0,.35)}
 .hero-actions{display:flex;align-items:center;gap:24px}
 .primary{background:var(--black);color:#fff}
 .primary:hover{background:#000}
-.primary:focus-visible,.header-cta:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.primary:focus-visible,.header-cta:focus-visible{outline:3px solid #f2d5c6;outline-offset:3px}
 .text-link{font-size:13px;text-underline-offset:5px}
 .quick-info{display:flex;gap:0;margin:50px 0 0;border-top:1px solid var(--line)}
 .quick-info div{padding:18px 28px 0 0;margin-right:28px;border-right:1px solid var(--line)}
 .quick-info div:last-child{border:0}
 .quick-info dt{font-size:10px;color:var(--muted)}
 .quick-info dd{margin:2px 0;font-size:13px;font-weight:700}
-.hero-art{position:relative;overflow:hidden;background:#2a160d url("assets/hero-salon-v2.jpg") center/cover no-repeat}
 .section{padding:100px 8vw}
 .intro{display:grid;grid-template-columns:1fr 1fr;gap:8vw;background:var(--paper)}
 h2{margin:0;font:400 clamp(31px,4vw,48px)/1.5 Georgia,"Yu Mincho",serif}
@@ -59,11 +60,12 @@ h2{margin:0;font:400 clamp(31px,4vw,48px)/1.5 Georgia,"Yu Mincho",serif}
 .steps span{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--sage-dark);color:#fff;font:italic 16px Georgia,serif}
 .steps h3{font:20px Georgia,"Yu Mincho",serif}
 .steps p{font-size:13px;color:var(--muted)}
-.access{display:grid;grid-template-columns:1fr 1fr;gap:8vw;background:#343b32;color:#fff}
+.access{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,1fr);gap:8vw;background:#343b32;color:#fff}
 .access .section-label{color:#d8c2b8}
 .access p{color:#d7ddd4}
-.access dl{margin:0;border-top:1px solid #697165}
-.access dl div{display:grid;grid-template-columns:120px 1fr;padding:16px 0;border-bottom:1px solid #697165}
+.access dl{margin:0;padding:8px 28px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.18)}
+.access dl div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:20px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.access dl div:last-child{border-bottom:0}
 .access dt{font-size:11px;color:#c8d0c4}
 .access dd{margin:0;font-size:14px}
 .contact{text-align:center;padding:100px 20px;background:#f2e7e1}
@@ -82,8 +84,9 @@ footer small{grid-column:1/-1;color:#aaa}
 .site-header nav{order:3;width:100%;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:10px}
 .site-header nav a{font-size:11px}
 .header-cta{margin-left:auto;min-height:44px;padding:10px 13px;font-size:11px}
-.hero{display:block;min-height:0}
-.hero-copy{padding:70px 22px 55px}
+.hero{display:flex;min-height:610px;align-items:flex-end;background-position:62% center}
+.hero:before{background:linear-gradient(180deg,rgba(18,10,6,.3) 0%,rgba(18,10,6,.56) 45%,rgba(18,10,6,.9) 100%)}
+.hero-copy{width:100%;padding:100px 22px 60px}
 .hero h1{font-size:39px}
 .hero-lead{font-size:14px}
 .hero-actions{display:block}
@@ -92,9 +95,6 @@ footer small{grid-column:1/-1;color:#aaa}
 .quick-info{display:grid;grid-template-columns:1fr 1fr;margin-top:35px}
 .quick-info div{padding:13px 10px 0 0;margin:0 10px 0 0}
 .quick-info div:last-child{grid-column:1/-1;margin-top:12px}
-.hero-art{height:280px}
-.sun{width:190px;height:190px}
-.leaf{height:270px}
 .section{padding:72px 22px}
 .intro,.access{display:block}
 .intro>div+div{margin-top:35px}
@@ -103,8 +103,10 @@ footer small{grid-column:1/-1;color:#aaa}
 .menu-grid,.steps{display:block}
 .menu-grid article,.steps article{margin-bottom:14px}
 .reasons li{grid-template-columns:42px 1fr;gap:12px}
-.access dl{margin-top:38px}
-.access dl div{grid-template-columns:95px 1fr}
+.access dl{margin-top:38px;padding:6px 18px}
+.access dl div{grid-template-columns:1fr;gap:2px;padding:14px 0}
+.access dt{font-size:10px}
+.access dd{font-size:15px}
 .contact{padding:72px 22px}
 .contact .button{width:100%;max-width:360px;min-height:52px}
 footer{display:block;padding:38px 22px}
