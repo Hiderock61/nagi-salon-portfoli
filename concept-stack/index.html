@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="nagiの空間・業態・スタイルを上から順に読み、そのままメニューへつなげる縦ストーリー型の比較プロトタイプです。">
-  <title>Concept Stack 縦ストーリー型｜nagi</title>
+  <meta name="description" content="nagiの空間・業態・スタイルから、メニュー、利用条件、ご利用の流れ、相談、店舗情報までを一続きで確認できる縦スクロール型プロトタイプです。">
+  <title>Concept Stack 縦一本型｜nagi</title>
+  <link rel="stylesheet" href="../assets/css/care.css">
   <link rel="stylesheet" href="../assets/css/concept-stack.css">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="logo" href="#top" aria-label="nagi 縦ストーリー型の先頭へ">nagi</a>
-      <nav aria-label="縦ストーリー型メニュー">
+      <a class="logo" href="#top" aria-label="nagi 縦一本型の先頭へ">nagi</a>
+      <nav aria-label="縦一本型メニュー">
         <a href="#about">nagiについて</a>
         <a href="#menu">メニュー</a>
-        <a href="../care.html#care-overview">詳しい内容</a>
+        <a href="#first-visit">ご利用の流れ</a>
       </nav>
     </div>
   </header>
@@ -67,17 +68,17 @@
       </div>
 
       <div class="menu-list" role="list" aria-label="nagiの3つのメニュー">
-        <a href="../care.html#facial" role="listitem">
+        <a href="#facial" role="listitem">
           <span class="menu-name">フェイシャルケア</span>
           <span class="menu-time">60分</span>
           <strong>7,700円</strong>
         </a>
-        <a href="../care.html#trial" role="listitem">
+        <a href="#trial" role="listitem">
           <span class="menu-name">初回体験コース <small>初回限定</small></span>
           <span class="menu-time">70分</span>
           <strong>6,600円</strong>
         </a>
-        <a href="../care.html#body" role="listitem">
+        <a href="#body" role="listitem">
           <span class="menu-name">ボディケア</span>
           <span class="menu-time">60分</span>
           <strong>8,800円</strong>
@@ -88,15 +89,127 @@
         <p>フェイシャルとボディケアのどちらにするか、決まっていなくても構いません。当日の肌や身体の状態、ご希望を確認し、内容と料金をご案内してからケアを始めます。</p>
       </div>
 
-      <a class="primary-cta" href="../care.html#care-overview">詳しい内容と料金を見る</a>
+      <a class="primary-cta" href="#facial">詳しい内容と料金を見る</a>
+    </section>
+
+    <section class="course section" id="facial" aria-labelledby="facial-title">
+      <div class="course-media">
+        <picture>
+          <source srcset="../assets/images/nagi/nagi-care-02-4x5.webp" type="image/webp">
+          <img src="../assets/images/nagi/nagi-care-02-4x5.jpg" width="820" height="1024" loading="lazy" alt="静かな個室でフェイシャルケアを受けている様子">
+        </picture>
+      </div>
+      <article class="course-content">
+        <p class="section-label">FACIAL CARE</p>
+        <h2 id="facial-title">フェイシャルケア</h2>
+        <p class="course-price"><span>60分</span><strong>7,700円</strong></p>
+        <p>肌の状態や乾燥の気になる箇所を確認し、クレンジングから保湿まで丁寧に整える基本のフェイシャルコースです。</p>
+        <div class="detail-block"><h3>施術内容</h3><ul class="compact-list"><li>クレンジング</li><li>フェイシャルトリートメント</li><li>保湿ケア</li></ul></div>
+        <div class="detail-block"><h3>こんな方におすすめ</h3><ul><li>乾燥や肌のごわつきが気になる方</li><li>定期的に肌を整えたい方</li><li>静かな空間でゆっくり過ごしたい方</li></ul></div>
+      </article>
+    </section>
+
+    <section class="course section course-text-only" id="trial" aria-labelledby="trial-title">
+      <article class="course-content">
+        <p class="quiet-badge">初回限定</p>
+        <p class="section-label">FIRST TRIAL</p>
+        <h2 id="trial-title">初回体験コース</h2>
+        <p class="course-price"><span>70分</span><strong>6,600円</strong></p>
+        <p>初めてnagiをご利用になる方のためのお試しコースです。現在の状態や希望を伺い、フェイシャルまたはボディケアから施術内容を選びます。</p>
+        <div class="detail-columns">
+          <div class="detail-block"><h3>施術内容</h3><ul><li>カウンセリング</li><li>フェイシャルまたはボディケア</li><li>施術後の状態確認</li></ul></div>
+          <div class="detail-block"><h3>こんな方におすすめ</h3><ul><li>どのメニューを選べばよいか分からない方</li><li>サロンの雰囲気を確かめたい方</li><li>まずは一度、施術を体験したい方</li></ul></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="course section course-text-only" id="body" aria-labelledby="body-title">
+      <article class="course-content">
+        <p class="section-label">BODY CARE</p>
+        <h2 id="body-title">ボディケア</h2>
+        <p class="course-price"><span>60分</span><strong>8,800円</strong></p>
+        <p>肩、背中、脚など、疲れや重さを感じる箇所を確認しながら施術内容を組み立てるリラクゼーションコースです。</p>
+        <div class="detail-columns">
+          <div class="detail-block"><h3>施術内容</h3><ul class="compact-list"><li>肩まわり</li><li>背中</li><li>脚</li></ul><p class="detail-note">希望や当日の状態に合わせて、施術箇所を調整します。</p></div>
+          <div class="detail-block"><h3>こんな方におすすめ</h3><ul><li>肩や背中の疲れが気になる方</li><li>立ち仕事や座り仕事で脚が重く感じる方</li><li>全身をゆっくり休めたい方</li></ul></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section conditions" id="conditions" aria-labelledby="conditions-title">
+      <div class="section-heading">
+        <p class="section-label">CONDITIONS</p>
+        <h2 id="conditions-title">料金・利用条件</h2>
+      </div>
+      <ul class="condition-list">
+        <li>表示価格は税込です。</li>
+        <li>施術時間には、カウンセリングと着替えの時間は含まれません。</li>
+        <li>お支払いは、現金・主要クレジットカードをご利用いただけます。</li>
+        <li>強い勧誘や回数券の販売は行いません。</li>
+        <li>施術内容は美容とリラクゼーションを目的としたもので、治療や医療行為ではありません。</li>
+      </ul>
+    </section>
+
+    <section class="section first-visit" id="first-visit" aria-labelledby="first-title">
+      <div class="section-heading">
+        <p class="section-label">FIRST VISIT</p>
+        <h2 id="first-title">ご利用の流れ</h2>
+      </div>
+      <ol class="timeline">
+        <li><span>01</span><div><h3>予約前の問い合わせ</h3><p>希望日時と、気になっているメニューを伝えます。フェイシャルとボディケアのどちらにするか、相談してから決めることもできます。</p></div></li>
+        <li><span>02</span><div><h3>日程と場所の案内</h3><p>空き状況を確認し、来店日時と詳しい場所をご案内します。施術内容や料金について、予約を決める前にも確認できます。</p></div></li>
+        <li><span>03</span><div><h3>来店・カウンセリング</h3><p>肌や身体の状態、気になる箇所、希望、当日の体調を確認します。</p></div></li>
+        <li><span>04</span><div><h3>施術内容と料金の確認</h3><p>カウンセリングをもとに、当日のケア内容と料金をご案内します。</p></div></li>
+        <li><span>05</span><div><h3>施術</h3><p>内容と料金に納得いただいた後に施術を始めます。</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section consultation" id="consultation" aria-labelledby="consultation-title">
+      <div class="section-heading">
+        <p class="section-label">DEMO CONSULTATION</p>
+        <h2 id="consultation-title">希望するケアについて相談する</h2>
+        <p>メニューが決まっていない場合も、気になっていることから相談できます。</p>
+      </div>
+      <div class="demo-warning" role="note">
+        <strong>ポートフォリオ用相談デモ</strong>
+        <p>この相談フォームはデモです。入力内容は送信されません。入力内容は保存されません。予約は成立しません。</p>
+      </div>
+      <form class="demo-form" id="demo-form">
+        <fieldset>
+          <legend>気になるケア</legend>
+          <label><input type="radio" name="care" value="フェイシャル"> フェイシャル</label>
+          <label><input type="radio" name="care" value="ボディケア"> ボディケア</label>
+          <label><input type="radio" name="care" value="初回体験"> 初回体験</label>
+          <label><input type="radio" name="care" value="未定" checked> まだ決まっていない</label>
+        </fieldset>
+        <label class="field"><span>相談内容</span><textarea name="message" rows="4" placeholder="気になっていることを入力できます"></textarea></label>
+        <label class="field"><span>希望時期 <small>任意</small></span><input type="text" name="timing" inputmode="text" placeholder="例：来月ごろ"></label>
+        <button class="demo-button" type="button" id="demo-check">デモ相談内容を確認する</button>
+        <p class="demo-result" id="demo-result" role="status" tabindex="-1" hidden>デモ確認が完了しました。入力内容は送信・保存されておらず、予約も成立していません。</p>
+      </form>
+    </section>
+
+    <section class="section shop-info" id="shop-info" aria-labelledby="shop-title">
+      <div class="section-heading compact-heading">
+        <p class="section-label">SHOP INFORMATION</p>
+        <h2 id="shop-title">店舗情報</h2>
+      </div>
+      <dl>
+        <div><dt>アクセス</dt><dd>方南町駅から徒歩4分</dd></div>
+        <div><dt>営業時間</dt><dd>10:00〜19:00</dd></div>
+        <div><dt>定休日</dt><dd>火曜日</dd></div>
+        <div><dt>ご利用</dt><dd>女性専用・完全予約制</dd></div>
+        <div><dt>お支払い</dt><dd>現金・主要クレジットカード</dd></div>
+      </dl>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <div><strong>nagi</strong><span>FACIAL &amp; BODY CARE</span></div>
-      <small>比較用の縦ストーリー型プロトタイプです。</small>
+      <small>比較用の縦一本型プロトタイプです。</small>
     </div>
   </footer>
+  <script src="../assets/js/care.js"></script>
 </body>
 </html>
